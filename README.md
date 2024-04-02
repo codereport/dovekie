@@ -29,5 +29,14 @@ pip3 install dovekie
 
 And how to use:
 ```py
+import operator as op
+from itertools import accumulate
+
 from dovekie import _phi1_, _r_
+
+
+def mco(xs: list[int]) -> int:
+    return max(accumulate(xs, _phi1_(op.add, op.mul, _r_)))
+
+print(mco([1, 0, 1, 1, 1, 0, 0, 1, 1, 0])) # 3
 ```
