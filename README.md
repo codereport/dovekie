@@ -20,9 +20,11 @@
 * C++ [`blackbird` library](https://github.com/codereport/blackbird)
 * Rust [`bluebird` library](https://github.com/codereport/bluebird)
 
-![image-removebg-preview](https://github.com/codereport/dovekie/assets/36027403/3a51f52e-165c-40e0-a3e0-6318915cef8f)
+<p align="center">
+  <img src="https://github.com/codereport/dovekie/assets/36027403/3a51f52e-165c-40e0-a3e0-6318915cef8f" alt="image-removebg-preview">
+</p>
 
-How to install 
+How to install:
 ```bash
 pip3 install dovekie
 ```
