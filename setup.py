@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dovekie",
-    version="0.2.0",
+    version="0.3.0",
     packages=find_packages(),
     description="A library that defines common SKI combinators from Combinatory Logic.",
     long_description=open('README.md').read(),
