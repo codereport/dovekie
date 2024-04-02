@@ -1,7 +1,7 @@
 import operator as op
 from itertools import accumulate
 
-from dovekie.core import _l_, _r_, _phi1_
+from dovekie.core import _l_, _r_, _phi1_, _b, _add
 
 def test_l():
     assert _l_(1, None) == 1
@@ -14,3 +14,6 @@ def mco(xs: list[int]) -> int:
 
 def test_phi1_mco():
     assert mco([1, 0, 1, 1, 1, 0, 0, 1, 1, 0]) == 3
+
+def test_b():
+    assert _b(op.neg, _add(1))(1) == -2
