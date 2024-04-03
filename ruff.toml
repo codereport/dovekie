@@ -1,0 +1,10 @@
+select = ["E", "F", "B", "W", "ERA", "RET", "UP", "I", "N", "Q"]
+
+ignore = [
+    "E501", # Never enforce `E501` (line length violations).
+    "E701", # Multiple statements on one line (colon)
+    "E741", # Ambiguous variable name: `l`
+
+    # dovekie specific
+    "E731", # [*] Do not assign a `lambda` expression, use a `def` 
+]
