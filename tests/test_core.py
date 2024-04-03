@@ -1,7 +1,8 @@
 import operator as op
 from itertools import accumulate
 
-from dovekie.core import _l_, _r_, _phi1_, _b, _add
+from dovekie.core import _add, _b, _l_, _phi1_, _r_
+
 
 def test_l():
     assert _l_(1, None) == 1
