@@ -6,3 +6,6 @@ _r_    = lambda _, y: y
 
 # convient unary/binary operations
 _add   = lambda x: lambda y: x + y
+
+_fst = lambda x: x[0]
+_snd = lambda x: x[1]

@@ -1,7 +1,7 @@
 import operator as op
 from itertools import accumulate
 
-from dovekie.core import _add, _b, _l_, _phi1_, _r_
+from dovekie.core import _add, _b, _fst, _l_, _phi1_, _r_, _snd
 
 
 def test_l():
@@ -18,3 +18,11 @@ def test_phi1_mco():
 
 def test_b():
     assert _b(op.neg, _add(1))(1) == -2
+
+def test_fst():
+    x = [1, 2, 4]
+    assert list(map(_snd, enumerate(x))) == x
+
+def test_snd():
+    x = [1, 2, 4]
+    assert list(map(_fst, enumerate(x))) == [0, 1, 2]
