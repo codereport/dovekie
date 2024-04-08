@@ -15,7 +15,7 @@
         <img src="https://img.shields.io/twitter/follow/code_report.svg?style=social&label=@code_report" /></a>
 </p>
 
-`dovekie` is a [Python](https://www.python.org/) library that provides SKI combinators from [Combinatory Logic](https://combinatorylogic.com/) and common unary and binary functions that are often used with these combinators. It is the spritual equivalent of the:
+`dovekie` is a [Python](https://www.python.org/) library that provides SKI combinators from [Combinatory Logic](https://combinatorylogic.com/) and common unary and binary functions that are often used with these combinators. It is the spiritual equivalent of the:
 
 * C++ [`blackbird` library](https://github.com/codereport/blackbird)
 * Rust [`bluebird` library](https://github.com/codereport/bluebird)
