@@ -1,28 +1,28 @@
 import operator as op
 from itertools import accumulate
 
-from dovekie.core import _add, _b, _fst, _l_, _phi1_, _r_, _snd
+import dovekie.core as d
 
 
 def test_l():
-    assert _l_(1, None) == 1
+    assert d.l(1, None) == 1
 
 def test_r():
-    assert _r_(None, 2) == 2
+    assert d.r(None, 2) == 2
 
 def mco(xs: list[int]) -> int:
-    return max(accumulate(xs, _phi1_(op.add, op.mul, _r_)))
+    return max(accumulate(xs, d.phi1(op.add, op.mul, d.r)))
 
 def test_phi1_mco():
     assert mco([1, 0, 1, 1, 1, 0, 0, 1, 1, 0]) == 3
 
 def test_b():
-    assert _b(op.neg, _add(1))(1) == -2
+    assert d.b(op.neg, d.addl(1))(1) == -2
 
 def test_fst():
     x = [1, 2, 4]
-    assert list(map(_snd, enumerate(x))) == x
+    assert list(map(d.snd, enumerate(x))) == x
 
 def test_snd():
     x = [1, 2, 4]
-    assert list(map(_fst, enumerate(x))) == [0, 1, 2]
+    assert list(map(d.fst, enumerate(x))) == [0, 1, 2]
