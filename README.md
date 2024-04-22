@@ -34,11 +34,11 @@ And how to use:
 import operator as op
 from itertools import accumulate
 
-import dovekie as d
+import dovekie as dk
 
 
 def mco(xs: list[int]) -> int:
-    return max(accumulate(xs, d.phi1(op.add, op.mul, d.r)))
+    return max(accumulate(xs, dk.phi1(op.add, op.mul, dk.r)))
 
 print(mco([1, 0, 1, 1, 1, 0, 0, 1, 1, 0])) # 3
 ```
